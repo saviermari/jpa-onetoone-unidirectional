@@ -43,6 +43,7 @@ public class BookController {
         public BookModel getBook(@PathVariable Long id){
             return service.getBook(id);
         }
+
         @GetMapping("/books")
         public List<BookModel> getAllBooks(){
             return service.getAllBooks();
