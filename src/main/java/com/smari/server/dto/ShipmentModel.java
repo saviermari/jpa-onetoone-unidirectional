@@ -1,10 +1,13 @@
 package com.smari.server.dto;
 
+import java.io.Serializable;
+
 /**
  * POJO for Shipment DTO
  * @author smari
  */
-public class ShipmentModel {
+public class ShipmentModel implements Serializable {
+    private static final long serialVersionUID = 1L;
     private Long id;
     private String city;
     private String zipCode;

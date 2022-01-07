@@ -1,10 +1,13 @@
 package com.smari.server.dto;
 
+import java.io.Serializable;
+
 /**
  * POJO for Book DTO
  * @author smari
  */
-public class BookModel {
+public class BookModel  implements Serializable {
+    private static final long serialVersionUID = 1L;
     private Long id;
     private String name;
     private String isbn;
